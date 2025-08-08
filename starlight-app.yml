@@ -4,9 +4,10 @@
 name: "Debian"
 version: "1.0.0"
 description: "A basic Debian Docker container"
-type: "docker"  # or "vm"
+type: "docker"
 category: "Operating System"
-size: "29MB"
+author: "Your Name"
+license: "MIT"
 
 # App metadata
 logo: "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/debian/live/logo-1720462179484.png"
@@ -36,18 +37,33 @@ docker:
   auto_create: true
   remove_image_on_uninstall: true
     
+  # Port mappings (if needed)
+  ports:
+    "22/tcp": 2222  # Example: SSH access
+    
   # Environment variables
   environment:
-    NODE_ENV: "production"
+    DEBIAN_FRONTEND: "noninteractive"
     
-  # Volume mounts
+  # Volume mounts using Starlight's standardized system
   volumes:
-    "/app/data": "/var/lib/debian"
+    - name: "debian-data"
+      template: "shared_storage"
+      target: "/var/lib/debian"
+      readonly: false
+      description: "Debian system data"
+
+# Installation notes
+install_notes: |
+  After installation:
+  1. The Debian container will be available
+  2. Access via: docker exec -it debian bash
+  3. SSH access (if configured): ssh -p 2222 root@localhost
 
 # Changelog
 changelog:
-  - version: "12.7"
-    date: "2025-07-21"
+  - version: "1.0.0"
+    date: "2025-01-01"
     changes:
       - "Initial release"
-      - "Operating System"
+      - "Basic Debian container setup"
