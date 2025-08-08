@@ -1,0 +1,53 @@
+# Starlight Debian Container
+# This App Creates a basic Docker container on a Starlight server
+
+name: "Debian"
+version: "1.0.0"
+description: "A basic Debian Docker container"
+type: "docker"  # or "vm"
+category: "Operating System"
+size: "29MB"
+
+# App metadata
+logo: "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/debian/live/logo-1720462179484.png"
+screenshots:
+  - "https://example.com/screenshot1.png"
+  - "https://example.com/screenshot2.png"
+
+tags:
+  - "debian"
+  - "os"
+
+# Documentation and support
+documentation_url: "https://hub.docker.com/_/debian"
+support_url: "https://hub.docker.com/_/debian"
+
+# System requirements
+requirements:
+  memory: "512MB"
+  cpu: "1 core"
+  disk: "1GB"
+
+# Docker-specific configuration
+docker:
+  image: "debian:latest"
+  container_name: "debian"
+  auto_start: true
+  auto_create: true
+  remove_image_on_uninstall: true
+    
+  # Environment variables
+  environment:
+    NODE_ENV: "production"
+    
+  # Volume mounts
+  volumes:
+    "/app/data": "/var/lib/debian"
+
+# Changelog
+changelog:
+  - version: "12.7"
+    date: "2025-07-21"
+    changes:
+      - "Initial release"
+      - "Operating System"
