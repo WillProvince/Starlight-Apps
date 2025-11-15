@@ -1,0 +1,22 @@
+{
+"name": "Starlight Repository",
+"description": "A Repository of Apps for Starlight.",
+"apps": [
+{
+"name": "Debian",
+"description": "Debian 13!",
+"xml_url": "http://your-host-ip/repo/minimal-disk-boot.xml",
+"disk_size_gb": 16,
+"memory_mb": 4096,
+"vcpus": 2
+},
+{
+"name": "Home Assistant!",
+"description": "A basic Home Assistant Install",
+"xml_url": "http://your-host-ip/repo/iso-install-template.xml",
+"disk_size_gb": 16,
+"memory_mb": 2048,
+"vcpus": 2
+}
+]
+}
