@@ -43,7 +43,7 @@
     {
       "id": "rocky-linux-9",
       "name": "Rocky Linux 9",
-      "icon": "https://rockylinux.org/images/rocky-linux-icon.png",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Rocky_Linux_logo.svg/960px-Rocky_Linux_logo.svg.png?20221009233635",
       "summary": "Enterprise-grade RHEL-compatible distribution",
       "description": "# Rocky Linux 9\n\n**Rocky Linux** is a community-driven, enterprise-grade operating system designed to be **100% bug-for-bug compatible** with Red Hat Enterprise Linux (RHEL).\n\n## Key Features\n\n- 💼 **Enterprise-ready** - production-grade stability\n- 🔄 **RHEL-compatible** - drop-in replacement\n- 📅 **10-year support** lifecycle\n- 🏢 **CentOS successor** - by original CentOS founder\n\n## Perfect For\n\n- Enterprise production workloads\n- Applications requiring RHEL compatibility\n- Organizations migrating from CentOS\n- Corporate IT infrastructure\n\n## Included Components\n\n- Rocky Linux 9 base system\n- SELinux enabled by default\n- Firewalld for network security\n- DNF package manager\n- Cockpit web console (optional)\n\n## Default Access\n\n- **Username:** `rocky`\n- **Password:** `rockylinux`\n\n---\n\n*Suitable for both development and production environments.*",
       "category": "linux",
