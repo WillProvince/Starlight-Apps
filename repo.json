@@ -16,7 +16,7 @@
       "xml_url": "https://raw.githubusercontent.com/WillProvince/Starlight-Apps/refs/heads/Starlight-aiohttp/ubuntu/22.04-server.xml",
       "image_source": {
         "type": "qcow2",
-        "url": "https://cloud-images.ubuntu.com/releases/22.04/release/ubuntu-22.04-server-cloudimg-amd64.img",
+        "url": "https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img",
         "checksum": "sha256:abcdef1234567890...",
         "size_mb": 650
       }
