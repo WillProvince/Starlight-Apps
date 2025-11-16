@@ -35,7 +35,7 @@
       "xml_url": "https://raw.githubusercontent.com/WillProvince/Starlight-Apps/refs/heads/Starlight-aiohttp/debian/debian-12-server.xml",
       "image_source": {
         "type": "qcow2",
-        "url": "https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-amd64.qcow2",
+        "url": "https://cdimage.debian.org/images/cloud/trixie/daily/20251116-2298/debian-13-generic-amd64-daily-20251116-2298.qcow2",
         "checksum": "sha256:fedcba0987654321...",
         "size_mb": 512
       }
