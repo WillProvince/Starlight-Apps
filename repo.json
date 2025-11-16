@@ -1,22 +1,160 @@
 {
-"name": "Starlight Repository",
-"description": "A Repository of Apps for Starlight.",
-"apps": [
-{
-"name": "Debian",
-"description": "Debian 13!",
-"xml_url": "http://your-host-ip/repo/minimal-disk-boot.xml",
-"disk_size_gb": 16,
-"memory_mb": 4096,
-"vcpus": 2
-},
-{
-"name": "Home Assistant!",
-"description": "A basic Home Assistant Install",
-"xml_url": "http://your-host-ip/repo/iso-install-template.xml",
-"disk_size_gb": 16,
-"memory_mb": 2048,
-"vcpus": 2
-}
-]
+  "name": "Sample Starlight Repository",
+  "version": "2.0",
+  "apps": [
+    {
+      "id": "ubuntu-22-04-server",
+      "name": "Ubuntu Server 22.04 LTS",
+      "icon": "https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png",
+      "summary": "Latest Ubuntu LTS server - lightweight and stable",
+      "description": "# Ubuntu Server 22.04 LTS\n\n**Ubuntu Server** is the world's most popular Linux distribution for cloud and server environments.\n\n## Features\n\n- ✅ **Long-term support** until 2027\n- ✅ **Optimized for cloud** deployments\n- ✅ **Enterprise-ready** with professional support available\n- ✅ **Secure by default** with automatic security updates\n\n## Ideal For\n\n- Web hosting (Apache, Nginx)\n- Development environments\n- Docker/container hosting\n- General-purpose server tasks\n\n## Included Software\n\n- Ubuntu 22.04 LTS base system\n- SSH server enabled\n- Cloud-init for automated configuration\n- APT package manager with thousands of packages\n\n## Default Credentials\n\n- **Username:** `ubuntu`\n- **Password:** `ubuntu` (please change on first login)\n\n---\n\n*This VM is pre-configured and ready to deploy.*",
+      "category": "linux",
+      "tags": ["ubuntu", "server", "lts", "debian-based"],
+      "vcpus": 2,
+      "memory_mb": 2048,
+      "disk_size_gb": 20,
+      "xml_url": "https://raw.githubusercontent.com/example/starlight-vms/main/ubuntu-22.04-server.xml",
+      "image_source": {
+        "type": "qcow2",
+        "url": "https://cloud-images.ubuntu.com/releases/22.04/release/ubuntu-22.04-server-cloudimg-amd64.img",
+        "checksum": "sha256:abcdef1234567890...",
+        "size_mb": 650
+      }
+    },
+    {
+      "id": "debian-12-bookworm",
+      "name": "Debian 12 (Bookworm)",
+      "icon": "https://www.debian.org/logos/openlogo-nd-50.png",
+      "summary": "Stable Debian server - perfect for production",
+      "description": "# Debian 12 \"Bookworm\"\n\nDebian is known for its **stability, security, and extensive package repository**. Debian 12 is the latest stable release.\n\n## Why Choose Debian?\n\n- 🛡️ **Rock-solid stability** - thoroughly tested packages\n- 🔒 **Security-focused** - rapid security updates\n- 📦 **50,000+ packages** available\n- 🌍 **Community-driven** - no corporate control\n\n## Use Cases\n\n- Production web servers\n- Database hosting (PostgreSQL, MySQL)\n- Mail servers\n- File servers\n- Development platforms\n\n## What's Included\n\n- Debian 12 \"Bookworm\" base installation\n- OpenSSH server\n- Systemd init system\n- Full APT repository access\n\n## Login Information\n\n- **Username:** `debian`\n- **Password:** `debian`\n\n---\n\n**Note:** This is a minimal installation. Install additional software using `apt-get`.",
+      "category": "linux",
+      "tags": ["debian", "stable", "server"],
+      "vcpus": 2,
+      "memory_mb": 2048,
+      "disk_size_gb": 25,
+      "xml_url": "https://raw.githubusercontent.com/example/starlight-vms/main/debian-12-server.xml",
+      "image_source": {
+        "type": "qcow2",
+        "url": "https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-amd64.qcow2",
+        "checksum": "sha256:fedcba0987654321...",
+        "size_mb": 512
+      }
+    },
+    {
+      "id": "rocky-linux-9",
+      "name": "Rocky Linux 9",
+      "icon": "https://rockylinux.org/images/rocky-linux-icon.png",
+      "summary": "Enterprise-grade RHEL-compatible distribution",
+      "description": "# Rocky Linux 9\n\n**Rocky Linux** is a community-driven, enterprise-grade operating system designed to be **100% bug-for-bug compatible** with Red Hat Enterprise Linux (RHEL).\n\n## Key Features\n\n- 💼 **Enterprise-ready** - production-grade stability\n- 🔄 **RHEL-compatible** - drop-in replacement\n- 📅 **10-year support** lifecycle\n- 🏢 **CentOS successor** - by original CentOS founder\n\n## Perfect For\n\n- Enterprise production workloads\n- Applications requiring RHEL compatibility\n- Organizations migrating from CentOS\n- Corporate IT infrastructure\n\n## Included Components\n\n- Rocky Linux 9 base system\n- SELinux enabled by default\n- Firewalld for network security\n- DNF package manager\n- Cockpit web console (optional)\n\n## Default Access\n\n- **Username:** `rocky`\n- **Password:** `rockylinux`\n\n---\n\n*Suitable for both development and production environments.*",
+      "category": "linux",
+      "tags": ["rocky", "rhel", "enterprise", "centos-alternative"],
+      "vcpus": 4,
+      "memory_mb": 4096,
+      "disk_size_gb": 30,
+      "xml_url": "https://raw.githubusercontent.com/example/starlight-vms/main/rocky-9-server.xml",
+      "image_source": {
+        "type": "qcow2",
+        "url": "https://download.rockylinux.org/pub/rocky/9/images/x86_64/Rocky-9-GenericCloud.latest.x86_64.qcow2",
+        "checksum": "sha256:1234567890abcdef...",
+        "size_mb": 850
+      }
+    },
+    {
+      "id": "windows-server-2022",
+      "name": "Windows Server 2022",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/200px-Windows_logo_-_2012.svg.png",
+      "summary": "Modern Windows Server for enterprise workloads",
+      "description": "# Windows Server 2022\n\nThe latest version of **Microsoft Windows Server**, built for hybrid cloud environments.\n\n## Key Features\n\n- 🪟 **Modern Windows** - latest server OS from Microsoft\n- ☁️ **Hybrid cloud ready** - Azure Arc integration\n- 🔐 **Advanced security** - secured-core server capability\n- 🚀 **Improved performance** - better for containers\n\n## Ideal Applications\n\n- Active Directory Domain Controller\n- IIS Web Server\n- Microsoft SQL Server hosting\n- .NET application hosting\n- Windows-based enterprise apps\n- Group Policy management\n\n## What's Included\n\n- Windows Server 2022 Standard Edition\n- Server Core and Desktop Experience\n- Hyper-V role available\n- Windows Admin Center compatible\n\n## Important Notes\n\n⚠️ **This VM requires a valid Windows Server license.**\n\nYou must provide your own product key or use evaluation mode (180 days).\n\n## Default Credentials\n\n- **Username:** `Administrator`\n- **Password:** `Passw0rd!` (change immediately)\n\n---\n\n*Installation ISO will be automatically downloaded (5.2 GB).*",
+      "category": "windows",
+      "tags": ["windows", "server", "enterprise", "microsoft", "active-directory"],
+      "vcpus": 4,
+      "memory_mb": 8192,
+      "disk_size_gb": 60,
+      "xml_url": "https://raw.githubusercontent.com/example/starlight-vms/main/windows-server-2022.xml",
+      "image_source": {
+        "type": "iso",
+        "url": "https://software-download.microsoft.com/download/sg/20348.169.210806-2348.fe_release_svc_refresh_SERVER_EVAL_x64FRE_en-us.iso",
+        "checksum": "sha256:3e4fa6d8507b554856fc9ca6079cc402df11a8b79344871669f0251535255325",
+        "size_mb": 5200,
+        "requires_installation": true
+      }
+    },
+    {
+      "id": "docker-host-ubuntu",
+      "name": "Docker Host (Ubuntu)",
+      "icon": "https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png",
+      "summary": "Pre-configured Docker environment ready to go",
+      "description": "# Docker Host - Ubuntu Edition\n\nA **fully configured Ubuntu system** with Docker Engine pre-installed and ready for container deployment.\n\n## What's Pre-Configured\n\n- 🐳 **Docker Engine** (latest stable)\n- 🏗️ **Docker Compose** v2\n- 📦 **Portainer CE** - web UI for container management\n- 🔧 **Docker CLI** with completion\n\n## Features\n\n- ✅ Non-root Docker access configured\n- ✅ Docker daemon optimized settings\n- ✅ Automatic container restart policies\n- ✅ Volume and network pre-configuration\n\n## Perfect For\n\n- Microservices development\n- Container orchestration testing\n- Running Docker Compose stacks\n- Learning Docker\n- Hosting containerized applications\n\n## Included Services\n\n- **Portainer** - Access at `http://VM_IP:9000`\n- **Docker API** - Socket at `/var/run/docker.sock`\n\n## Quick Start\n\n```bash\n# SSH into the VM\nssh docker@VM_IP\n\n# Run your first container\ndocker run -d -p 80:80 nginx\n\n# Use Docker Compose\ndocker compose up -d\n```\n\n## Login Details\n\n- **Username:** `docker`\n- **Password:** `docker`\n- **Portainer:** First login creates admin user\n\n---\n\n*Start deploying containers immediately!*",
+      "category": "containers",
+      "tags": ["docker", "containers", "ubuntu", "portainer", "devops"],
+      "vcpus": 2,
+      "memory_mb": 4096,
+      "disk_size_gb": 40,
+      "xml_url": "https://raw.githubusercontent.com/example/starlight-vms/main/docker-host-ubuntu.xml",
+      "image_source": {
+        "type": "qcow2",
+        "url": "https://example.com/images/docker-ubuntu-22.04.qcow2",
+        "checksum": "sha256:9876543210fedcba...",
+        "size_mb": 1800
+      }
+    },
+    {
+      "id": "k8s-worker-node",
+      "name": "Kubernetes Worker Node",
+      "icon": "https://kubernetes.io/images/kubernetes-horizontal-color.png",
+      "summary": "Ready to join your K8s cluster",
+      "description": "# Kubernetes Worker Node\n\nA **pre-configured worker node** ready to join your existing Kubernetes cluster.\n\n## Pre-Installed Components\n\n- 📦 **kubelet** - node agent\n- 📦 **kubeadm** - cluster join tool\n- 📦 **kubectl** - CLI tool\n- 🐳 **containerd** - container runtime\n- 🌐 **CNI plugins** - networking\n\n## System Configuration\n\n- ✅ Swap disabled\n- ✅ Required kernel modules loaded\n- ✅ IP forwarding enabled\n- ✅ Firewall rules configured\n- ✅ Time synchronization (chrony)\n\n## How to Join Your Cluster\n\n1. Deploy this VM\n2. SSH into the worker node\n3. Run the join command from your control plane:\n\n```bash\nsudo kubeadm join MASTER_IP:6443 \\\n  --token YOUR_TOKEN \\\n  --discovery-token-ca-cert-hash sha256:YOUR_HASH\n```\n\n## Compatibility\n\n- **Kubernetes:** v1.28+\n- **Container Runtime:** containerd 1.7+\n- **OS:** Ubuntu 22.04 LTS\n\n## Resource Requirements\n\n- **Minimum:** 2 vCPU, 4GB RAM\n- **Recommended:** 4 vCPU, 8GB RAM\n- **Production:** Scale as needed\n\n## Login Information\n\n- **Username:** `k8s`\n- **Password:** `kubernetes`\n\n---\n\n*Deploy multiple instances to scale your cluster horizontally.*",
+      "category": "containers",
+      "tags": ["kubernetes", "k8s", "containers", "orchestration", "cloud-native"],
+      "vcpus": 4,
+      "memory_mb": 8192,
+      "disk_size_gb": 50,
+      "xml_url": "https://raw.githubusercontent.com/example/starlight-vms/main/k8s-worker.xml",
+      "image_source": {
+        "type": "qcow2",
+        "url": "https://example.com/images/k8s-worker-ubuntu-22.04.qcow2",
+        "checksum": "sha256:abcd1234efgh5678...",
+        "size_mb": 2100
+      }
+    },
+    {
+      "id": "postgresql-server",
+      "name": "PostgreSQL Database Server",
+      "icon": "https://www.postgresql.org/media/img/about/press/elephant.png",
+      "summary": "High-performance PostgreSQL database",
+      "description": "# PostgreSQL Database Server\n\n**PostgreSQL** is the world's most advanced open-source relational database.\n\n## Pre-Configured Features\n\n- 🗄️ **PostgreSQL 15** - latest stable\n- 📊 **pgAdmin 4** - web-based management\n- 🔍 **Full-text search** enabled\n- 📈 **Performance tuning** applied\n- 🔐 **SSL/TLS** connections ready\n\n## Optimizations Applied\n\n- Tuned `postgresql.conf` for performance\n- Increased shared buffers (2GB)\n- Connection pooling with PgBouncer\n- Automatic vacuum optimization\n- Query performance monitoring\n\n## Included Extensions\n\n- **pg_stat_statements** - query analytics\n- **postgis** - geospatial data\n- **uuid-ossp** - UUID generation\n- **hstore** - key-value store\n- **pg_trgm** - fuzzy text search\n\n## Management Tools\n\n- **pgAdmin 4** - `http://VM_IP:5050`\n- **psql** - command-line client\n- **pg_dump/pg_restore** - backup tools\n\n## Default Configuration\n\n```yaml\nPostgreSQL Port: 5432\nMax Connections: 200\nShared Buffers: 2GB\nEffective Cache: 6GB\n```\n\n## Login Credentials\n\n- **System User:** `postgres`\n- **System Password:** `postgres`\n- **DB Superuser:** `postgres`\n- **DB Password:** `changeme123`\n- **pgAdmin Email:** `admin@localhost`\n- **pgAdmin Password:** `admin`\n\n## Quick Connect\n\n```bash\npsql -h VM_IP -U postgres -d postgres\n```\n\n---\n\n⚠️ **Security Note:** Change default passwords before production use!",
+      "category": "database",
+      "tags": ["postgresql", "database", "sql", "relational", "pgadmin"],
+      "vcpus": 4,
+      "memory_mb": 8192,
+      "disk_size_gb": 100,
+      "xml_url": "https://raw.githubusercontent.com/example/starlight-vms/main/postgresql-server.xml",
+      "image_source": {
+        "type": "qcow2",
+        "url": "https://example.com/images/postgresql-15-ubuntu.qcow2",
+        "checksum": "sha256:postgres1234567890...",
+        "size_mb": 3200
+      }
+    },
+    {
+      "id": "alpine-minimal",
+      "name": "Alpine Linux (Minimal)",
+      "icon": "https://alpinelinux.org/alpine-logo.ico",
+      "summary": "Ultra-lightweight Linux for microservices",
+      "description": "# Alpine Linux - Minimal Edition\n\n**Alpine Linux** is a security-oriented, lightweight Linux distribution based on musl libc and busybox.\n\n## Why Alpine?\n\n- ⚡ **Tiny footprint** - only ~5MB base image\n- 🚀 **Fast boot** - starts in seconds\n- 🔒 **Security-focused** - hardened by default\n- 📦 **APK package manager** - simple and fast\n\n## Ideal Use Cases\n\n- Microservices containers\n- Testing and development\n- Edge computing devices\n- Minimal server deployments\n- Learning Linux fundamentals\n- CI/CD build agents\n\n## What's Included\n\n- Alpine Linux 3.18 (latest)\n- OpenSSH server\n- Basic networking tools\n- APK package manager\n- BusyBox utilities\n\n## Resource Usage\n\n```\nDisk Usage: ~200MB (after installation)\nRAM Usage: ~50MB (idle)\nBoot Time: ~3 seconds\n```\n\n## Package Installation\n\n```bash\n# Update package index\napk update\n\n# Install packages\napk add nginx python3 docker\n\n# Search for packages\napk search nginx\n```\n\n## Login Details\n\n- **Username:** `alpine`\n- **Password:** `alpine`\n- **Root Password:** `alpine`\n\n## Performance\n\n✅ Minimal RAM usage\n✅ Fast package installation\n✅ Quick system updates\n✅ Low CPU overhead\n\n---\n\n*Perfect for resource-constrained environments!*",
+      "category": "linux",
+      "tags": ["alpine", "minimal", "lightweight", "security", "microservices"],
+      "vcpus": 1,
+      "memory_mb": 512,
+      "disk_size_gb": 5,
+      "xml_url": "https://raw.githubusercontent.com/example/starlight-vms/main/alpine-minimal.xml",
+      "image_source": {
+        "type": "iso",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.18/releases/x86_64/alpine-virt-3.18.0-x86_64.iso",
+        "checksum": "sha256:alpine123456789abc...",
+        "size_mb": 50,
+        "requires_installation": false
+      }
+    }
+  ]
 }
