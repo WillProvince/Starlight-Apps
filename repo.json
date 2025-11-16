@@ -92,7 +92,7 @@
       "xml_url": "https://raw.githubusercontent.com/WillProvince/Starlight-Apps/refs/heads/Starlight-aiohttp/alpine/alpine-minimal.xml",
       "image_source": {
         "type": "iso",
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.18/releases/x86_64/alpine-virt-3.18.0-x86_64.iso",
+        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/x86_64/alpine-virt-3.19.9-x86_64.iso",
         "checksum": "sha256:alpine123456789abc...",
         "size_mb": 50,
         "requires_installation": false
