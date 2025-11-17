@@ -4,7 +4,7 @@
   This template defines a Home Assistant VM with:
   - 2 vCPUs
   - 2GB RAM
-  - UEFI firmware (required for Home Assistant OS)
+  - UEFI firmware (4M variant - required for Home Assistant OS)
   - VirtIO drivers for optimal performance
   - VNC graphics
   - Network on default libvirt network
@@ -18,7 +18,7 @@
   <os>
     <type arch='x86_64' machine='pc-q35-6.2'>hvm</type>
     <loader readonly='yes' type='pflash'>/usr/share/OVMF/OVMF_CODE_4M.fd</loader>
-    <nvram>/var/lib/libvirt/qemu/nvram/home-assistant_VARS.fd</nvram>
+    <nvram template='/usr/share/OVMF/OVMF_VARS_4M.fd'>/var/lib/libvirt/qemu/nvram/home-assistant_VARS.fd</nvram>
     <boot dev='hd'/>
   </os>
   
