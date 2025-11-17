@@ -22,6 +22,25 @@
       }
     },
     {
+      "id": "home-assistant",
+      "name": "Home Assistant 16.3",
+      "icon": "https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png",
+      "summary": "Latest Home Assistant VM",
+      "description": "",
+      "category": "linux",
+      "tags": ["home-assistant", "server", "home-automation"],
+      "vcpus": 2,
+      "memory_mb": 2048,
+      "disk_size_gb": 16,
+      "xml_url": "https://raw.githubusercontent.com/WillProvince/Starlight-Apps/refs/heads/Starlight-aiohttp/home-assistant/home-assistant-16.3-server.xml",
+      "image_source": {
+        "type": "qcow2",
+        "url": "https://github.com/home-assistant/operating-system/releases/download/16.3/haos_ova-16.3.qcow2.xz",
+        "checksum": "sha256:abcdef1234567890...",
+        "size_mb": 650
+      }
+    },
+    {
       "id": "debian-12-bookworm",
       "name": "Debian 12 (Bookworm)",
       "icon": "https://www.debian.org/logos/openlogo-nd-50.png",
