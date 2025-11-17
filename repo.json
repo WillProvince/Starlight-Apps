@@ -24,7 +24,7 @@
     {
       "id": "home-assistant",
       "name": "Home Assistant 16.3",
-      "icon": "https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png",
+      "icon": "https://github.com/WillProvince/Starlight-Apps/blob/Starlight-aiohttp/home-assistant/home-assistant-logomark-with-margins-color-on-light.png?raw=true",
       "summary": "Latest Home Assistant VM",
       "description": "",
       "category": "linux",
