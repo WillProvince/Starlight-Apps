@@ -1,5 +1,5 @@
 {
-  "name": "Sample Starlight Repository",
+  "name": "Starlight Repository",
   "version": "2.0",
   "apps": [
     {
@@ -54,7 +54,26 @@
       "xml_url": "https://raw.githubusercontent.com/WillProvince/Starlight-Apps/refs/heads/Starlight-aiohttp/debian/debian-12-server.xml",
       "image_source": {
         "type": "qcow2",
-        "url": "https://cdimage.debian.org/images/cloud/trixie/daily/20251116-2298/debian-13-generic-amd64-daily-20251116-2298.qcow2",
+        "url": "https://cdimage.debian.org/images/cloud/bookworm/daily/20251117-2299/debian-12-nocloud-amd64-daily-20251117-2299.qcow2",
+        "checksum": "sha256:fedcba0987654321...",
+        "size_mb": 512
+      }
+    },
+    {
+      "id": "debian-13-trixie",
+      "name": "Debian 13 (Trixie)",
+      "icon": "https://www.debian.org/logos/openlogo-nd-50.png",
+      "summary": "Stable Debian server - perfect for production",
+      "description": "# Debian 13 \"Trixie\"\n\nDebian is known for its **stability, security, and extensive package repository**. Debian 12 is the latest stable release.\n\n## Why Choose Debian?\n\n- 🛡️ **Rock-solid stability** - thoroughly tested packages\n- 🔒 **Security-focused** - rapid security updates\n- 📦 **50,000+ packages** available\n- 🌍 **Community-driven** - no corporate control\n\n## Use Cases\n\n- Production web servers\n- Database hosting (PostgreSQL, MySQL)\n- Mail servers\n- File servers\n- Development platforms\n\n## What's Included\n\n- Debian 12 \"Bookworm\" base installation\n- OpenSSH server\n- Systemd init system\n- Full APT repository access\n\n## Login Information\n\n- **Username:** `debian`\n- **Password:** `debian`\n\n---\n\n**Note:** This is a minimal installation. Install additional software using `apt-get`.",
+      "category": "linux",
+      "tags": ["debian", "stable", "server"],
+      "vcpus": 2,
+      "memory_mb": 2048,
+      "disk_size_gb": 25,
+      "xml_url": "https://raw.githubusercontent.com/WillProvince/Starlight-Apps/refs/heads/Starlight-aiohttp/debian/debian-13-server.xml",
+      "image_source": {
+        "type": "qcow2",
+        "url": "https://cdimage.debian.org/images/cloud/trixie/20251117-2299/debian-13-nocloud-amd64-20251117-2299.qcow2",
         "checksum": "sha256:fedcba0987654321...",
         "size_mb": 512
       }
