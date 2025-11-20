@@ -141,7 +141,6 @@
         "requires_installation": false
       },
       "tags": ["linux", "alpine", "lightweight", "container"]
-    },
     }
   ]
 }
