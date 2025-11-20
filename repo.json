@@ -140,6 +140,25 @@
         "url": "https://images.linuxcontainers.org/images/alpine/3.19/amd64/default/20251119_13:00/rootfs.tar.xz",
         "size_mb": 5,
         "requires_installation": false
+      },
+    {
+      "type": "lxc",
+      "id": "debian-13-lxc",
+      "name": "Debian 13 LXC",
+      "icon": "https://www.debian.org/Pics/openlogo-50.png",
+      "summary": "Lightweight Debian 13 Linux container",
+      "description": "# Debian 13 Linux Container\n\nUltra-lightweight Debian Linux container, perfect for microservices and testing.\n\n## Features\n- Minimal footprint (~5MB base)\n- Fast startup time\n- APT package manager\n- Perfect for development\n\n## Use Cases\n- Web servers\n- Development environments\n- Microservices\n- Testing",
+      "category": "Containers",
+      "tags": ["linux", "alpine", "lightweight", "container"],
+      "vcpus": 1,
+      "memory_mb": 512,
+      "disk_size_gb": 5,
+      "xml_url": "https://raw.githubusercontent.com/WillProvince/Starlight-Apps/Starlight-aiohttp/debian/lxc-13.xml",
+      "image_source": {
+        "type": "rootfs",
+        "url": "https://images.linuxcontainers.org/images/debian/bookworm/amd64/cloud/20251120_05:24/rootfs.tar.xz",
+        "size_mb": 5,
+        "requires_installation": false
       }
     }
   ]
