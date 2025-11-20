@@ -3,6 +3,7 @@
   "version": "2.0",
   "apps": [
     {
+      "type": "vm",
       "id": "ubuntu-22-04-server",
       "name": "Ubuntu Server 22.04 LTS",
       "icon": "https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png",
@@ -22,6 +23,7 @@
       }
     },
     {
+      "type": "vm",
       "id": "home-assistant",
       "name": "Home Assistant 16.3",
       "icon": "https://github.com/WillProvince/Starlight-Apps/blob/Starlight-aiohttp/home-assistant/home-assistant-logomark-with-margins-color-on-light.png?raw=true",
@@ -41,6 +43,7 @@
       }
     },
     {
+      "type": "vm",
       "id": "debian-12-bookworm",
       "name": "Debian 12 (Bookworm)",
       "icon": "https://www.debian.org/logos/openlogo-nd-50.png",
@@ -60,6 +63,7 @@
       }
     },
     {
+      "type": "vm",
       "id": "debian-13-trixie",
       "name": "Debian 13 (Trixie)",
       "icon": "https://www.debian.org/logos/openlogo-nd-50.png",
@@ -79,6 +83,7 @@
       }
     },
     {
+      "type": "vm",
       "id": "rocky-linux-9",
       "name": "Rocky Linux 9",
       "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Rocky_Linux_logo.svg/960px-Rocky_Linux_logo.svg.png?20221009233635",
@@ -98,6 +103,7 @@
       }
     },
     {
+      "type": "vm",
       "id": "docker-host-ubuntu",
       "name": "Docker Host (Ubuntu)",
       "icon": "https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png",
@@ -117,6 +123,7 @@
       }
     },
     {
+      "type": "vm",
       "id": "alpine-minimal",
       "name": "Alpine Linux (Minimal)",
       "icon": "https://alpinelinux.org/alpine-logo.ico",
