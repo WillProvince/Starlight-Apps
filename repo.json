@@ -123,25 +123,24 @@
       }
     },
     {
-      "type": "vm",
-      "id": "alpine-minimal",
-      "name": "Alpine Linux (Minimal)",
-      "icon": "https://alpinelinux.org/alpine-logo.ico",
-      "summary": "Ultra-lightweight Linux for microservices",
-      "description": "# Alpine Linux - Minimal Edition\n\n**Alpine Linux** is a security-oriented, lightweight Linux distribution based on musl libc and busybox.\n\n## Why Alpine?\n\n- ⚡ **Tiny footprint** - only ~5MB base image\n- 🚀 **Fast boot** - starts in seconds\n- 🔒 **Security-focused** - hardened by default\n- 📦 **APK package manager** - simple and fast\n\n## Ideal Use Cases\n\n- Microservices containers\n- Testing and development\n- Edge computing devices\n- Minimal server deployments\n- Learning Linux fundamentals\n- CI/CD build agents\n\n## What's Included\n\n- Alpine Linux 3.18 (latest)\n- OpenSSH server\n- Basic networking tools\n- APK package manager\n- BusyBox utilities\n\n## Resource Usage\n\n```\nDisk Usage: ~200MB (after installation)\nRAM Usage: ~50MB (idle)\nBoot Time: ~3 seconds\n```\n\n## Package Installation\n\n```bash\n# Update package index\napk update\n\n# Install packages\napk add nginx python3 docker\n\n# Search for packages\napk search nginx\n```\n\n## Login Details\n\n- **Username:** `alpine`\n- **Password:** `alpine`\n- **Root Password:** `alpine`\n\n## Performance\n\n✅ Minimal RAM usage\n✅ Fast package installation\n✅ Quick system updates\n✅ Low CPU overhead\n\n---\n\n*Perfect for resource-constrained environments!*",
-      "category": "linux",
-      "tags": ["alpine", "minimal", "lightweight", "security", "microservices"],
+      "name": "Alpine Linux LXC",
+      "type": "lxc",
+      "summary": "Lightweight Alpine Linux container",
+      "description": "# Alpine Linux Container\n\nUltra-lightweight Alpine Linux container, perfect for microservices and testing.\n\n## Features\n- Minimal footprint (~5MB base)\n- Fast startup time\n- APK package manager\n- Perfect for development\n\n## Use Cases\n- Web servers\n- Development environments\n- Microservices\n- Testing",
+      "category": "Containers",
+      "icon": "https://alpinelinux.org/alpinelinux-logo.svg",
+      "xml_url": "https://example.com/containers/alpine-lxc.xml",
       "vcpus": 1,
       "memory_mb": 512,
       "disk_size_gb": 5,
-      "xml_url": "https://raw.githubusercontent.com/WillProvince/Starlight-Apps/refs/heads/Starlight-aiohttp/alpine/alpine-minimal.xml",
       "image_source": {
-        "type": "iso",
-        "url": "https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/x86_64/alpine-virt-3.19.9-x86_64.iso",
-        "checksum": "sha256:alpine123456789abc...",
-        "size_mb": 50,
+        "type": "rootfs",
+        "url": "https://images.linuxcontainers.org/images/alpine/3.19/amd64/default/20251119_13:00/rootfs.tar.xz",
+        "size_mb": 5,
         "requires_installation": false
-      }
+      },
+      "tags": ["linux", "alpine", "lightweight", "container"]
+    },
     }
   ]
 }
