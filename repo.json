@@ -134,7 +134,7 @@
       "vcpus": 1,
       "memory_mb": 512,
       "disk_size_gb": 5,
-      "xml_url": "https://github.com/WillProvince/Starlight-Apps/blob/Starlight-aiohttp/alpine/lxc-minimal.xml",
+      "xml_url": "https://raw.githubusercontent.com/WillProvince/Starlight-Apps/refs/heads/Starlight-aiohttp/alpine/alpine-minimal.xml",
       "image_source": {
         "type": "rootfs",
         "url": "https://images.linuxcontainers.org/images/alpine/3.19/amd64/default/20251119_13:00/rootfs.tar.xz",
