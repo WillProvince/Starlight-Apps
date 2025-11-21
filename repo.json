@@ -97,7 +97,7 @@
       "xml_url": "https://raw.githubusercontent.com/WillProvince/Starlight-Apps/refs/heads/Starlight-aiohttp/rocky-linux/rocky-server.xml",
       "image_source": {
         "type": "qcow2",
-        "url": "https://download.rockylinux.org/pub/rocky/9/images/x86_64/Rocky-9-GenericCloud.latest.x86_64.qcow2",
+        "url": "https://dl.rockylinux.org/pub/rocky/9/images/x86_64/Rocky-9-GenericCloud.latest.x86_64.qcow2",
         "checksum": "sha256:1234567890abcdef...",
         "size_mb": 850
       }
