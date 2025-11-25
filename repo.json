@@ -1,10 +1,11 @@
-{
+wwwwwwwwwwwwwww{
   "name": "Starlight Repository",
   "version": "2.0",
   "apps": [
     {
       "type": "vm",
       "id": "ubuntu-22-04-server",
+      "category": "Server",
       "name": "Ubuntu Server 22.04 LTS",
       "icon": "https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png",
       "summary": "Latest Ubuntu LTS server - lightweight and stable",
@@ -25,6 +26,7 @@
     {
       "type": "vm",
       "id": "home-assistant",
+      "category": "Smart Home",
       "name": "Home Assistant 16.3",
       "icon": "https://github.com/WillProvince/Starlight-Apps/blob/Starlight-aiohttp/home-assistant/home-assistant-logomark-with-margins-color-on-light.png?raw=true",
       "summary": "Latest Home Assistant VM",
@@ -45,6 +47,7 @@
     {
       "type": "vm",
       "id": "debian-12-bookworm",
+      "category": "Server",
       "name": "Debian 12 (Bookworm)",
       "icon": "https://www.debian.org/logos/openlogo-nd-50.png",
       "summary": "Stable Debian server - perfect for production",
@@ -65,6 +68,7 @@
     {
       "type": "vm",
       "id": "debian-13-trixie",
+      "category": "Server",
       "name": "Debian 13 (Trixie)",
       "icon": "https://www.debian.org/logos/openlogo-nd-50.png",
       "summary": "Stable Debian server - perfect for production",
@@ -85,6 +89,7 @@
     {
       "type": "vm",
       "id": "rocky-linux-9",
+      "category": "Server",
       "name": "Rocky Linux 9",
       "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Rocky_Linux_logo.svg/960px-Rocky_Linux_logo.svg.png?20221009233635",
       "summary": "Enterprise-grade RHEL-compatible distribution",
@@ -103,28 +108,9 @@
       }
     },
     {
-      "type": "vm",
-      "id": "docker-host-ubuntu",
-      "name": "Docker Host (Ubuntu)",
-      "icon": "https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png",
-      "summary": "Pre-configured Docker environment ready to go",
-      "description": "# Docker Host - Ubuntu Edition\n\nA **fully configured Ubuntu system** with Docker Engine pre-installed and ready for container deployment.\n\n## What's Pre-Configured\n\n- 🐳 **Docker Engine** (latest stable)\n- 🏗️ **Docker Compose** v2\n- 📦 **Portainer CE** - web UI for container management\n- 🔧 **Docker CLI** with completion\n\n## Features\n\n- ✅ Non-root Docker access configured\n- ✅ Docker daemon optimized settings\n- ✅ Automatic container restart policies\n- ✅ Volume and network pre-configuration\n\n## Perfect For\n\n- Microservices development\n- Container orchestration testing\n- Running Docker Compose stacks\n- Learning Docker\n- Hosting containerized applications\n\n## Included Services\n\n- **Portainer** - Access at `http://VM_IP:9000`\n- **Docker API** - Socket at `/var/run/docker.sock`\n\n## Quick Start\n\n```bash\n# SSH into the VM\nssh docker@VM_IP\n\n# Run your first container\ndocker run -d -p 80:80 nginx\n\n# Use Docker Compose\ndocker compose up -d\n```\n\n## Login Details\n\n- **Username:** `docker`\n- **Password:** `docker`\n- **Portainer:** First login creates admin user\n\n---\n\n*Start deploying containers immediately!*",
-      "category": "containers",
-      "tags": ["docker", "containers", "ubuntu", "portainer", "devops"],
-      "vcpus": 2,
-      "memory_mb": 4096,
-      "disk_size_gb": 40,
-      "xml_url": "https://raw.githubusercontent.com/WillProvince/Starlight-Apps/refs/heads/Starlight-aiohttp/docker/ubuntu-host.xml",
-      "image_source": {
-        "type": "qcow2",
-        "url": "https://example.com/images/docker-ubuntu-22.04.qcow2",
-        "checksum": "sha256:9876543210fedcba...",
-        "size_mb": 1800
-      }
-    },
-    {
       "type": "lxc",
       "id": "alpine-linux-lxc",
+      "category": "Server",
       "name": "Alpine Linux LXC",
       "icon": "https://alpinelinux.org/alpinelinux-logo.svg",
       "summary": "Lightweight Alpine Linux container",
@@ -145,6 +131,7 @@
     {
       "type": "lxc",
       "id": "debian-13-lxc",
+      "category": "Server",
       "name": "Debian 13 LXC",
       "icon": "https://www.debian.org/logos/openlogo-nd-50.png",
       "summary": "Lightweight Debian 13 Linux container",
