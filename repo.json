@@ -117,7 +117,7 @@
       "xml_url": "https://raw.githubusercontent.com/WillProvince/Starlight-Apps/Starlight-aiohttp/alpine/lxc-minimal.xml",
       "image_source": {
         "type": "rootfs",
-        "url": "https://images.linuxcontainers.org/images/alpine/3.19/amd64/default/20251122_13%3A00/rootfs.tar.xz",
+        "url": "https://images.linuxcontainers.org/images/alpine/3.19/amd64/default/20251130_13:00/rootfs.tar.xz",
         "size_mb": 5,
         "requires_installation": false
       }
@@ -137,7 +137,7 @@
       "xml_url": "https://raw.githubusercontent.com/WillProvince/Starlight-Apps/Starlight-aiohttp/debian/lxc-13.xml",
       "image_source": {
         "type": "rootfs",
-        "url": "https://images.linuxcontainers.org/images/debian/bookworm/amd64/default/20251122_05%3A24/rootfs.tar.xz",
+        "url": "https://images.linuxcontainers.org/images/debian/trixie/amd64/default/20251130_05:24/rootfs.tar.xz",
         "size_mb": 5,
         "requires_installation": false
       }
