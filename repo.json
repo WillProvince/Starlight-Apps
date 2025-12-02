@@ -141,6 +141,32 @@
         "size_mb": 5,
         "requires_installation": false
       }
+    },
+    {
+      "type": "theme",
+      "name": "Midnight",
+      "id": "midnight",
+      "description": "A midnight inspired theme",
+      "summary": "Purples and highlights palette",
+      "tags": ["purple", "dark"],
+      "theme_data": {
+        "name": "Midnight",
+        "id": "midnight",
+        "variables": {
+          "bg-primary": "#0a0e27",
+          "bg-secondary": "#141937",
+          "bg-tertiary": "#1e2447",
+          "bg-card": "#141937",
+          "bg-sidebar": "linear-gradient(180deg, #0a0e27 0%, #000000 100%)",
+          "text-primary": "#e0e7ff",
+          "text-secondary": "#a5b4fc",
+          "text-tertiary": "#818cf8",
+          "text-sidebar": "#e0e7ff",
+          "border-color": "#3730a3",
+          "shadow-sm": "0 2px 4px rgba(99, 102, 241, 0.3)",
+          "shadow-md": "0 10px 15px -3px rgba(99, 102, 241, 0.3), 0 4px 6px -2px rgba(99, 102, 241, 0.2)"
+        }
+      }
     }
   ]
 }
