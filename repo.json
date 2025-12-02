@@ -146,6 +146,7 @@
       "type": "theme",
       "name": "Midnight",
       "id": "midnight",
+      "icon": "https://assets.dryicons.com/uploads/icon/svg/11885/7b49cd43-d486-4c13-a395-4069aa90ba30.svg",
       "description": "A midnight inspired theme",
       "summary": "Purples and highlights palette",
       "tags": ["purple", "dark"],
