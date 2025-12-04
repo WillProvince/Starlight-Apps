@@ -137,7 +137,7 @@
       "xml_url": "https://raw.githubusercontent.com/WillProvince/Starlight-Apps/Starlight-aiohttp/debian/lxc-13.xml",
       "image_source": {
         "type": "rootfs",
-        "url": "https://images.linuxcontainers.org/images/debian/trixie/amd64/default/20251130_05:24/roooootfs.tar.xz",
+        "url": "https://images.linuxcontainers.org/images/debian/trixie/amd64/default/20251130_05:24/rootfs.tar.xz",
         "size_mb": 5,
         "requires_installation": false
       }
