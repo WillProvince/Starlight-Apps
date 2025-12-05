@@ -1,0 +1,90 @@
+<!--
+  Docker Host Ubuntu VM Template for Starlight
+  
+  VM optimized for running Docker containers:
+  - 2 vCPUs (minimum for container workloads)
+  - 4GB RAM (better for multiple containers)
+  - VirtIO drivers for network performance
+  - Larger disk for container images
+-->
+<domain type='kvm'>
+  <name>docker-host</name>
+  <memory unit='KiB'>4194304</memory>
+  <currentMemory unit='KiB'>4194304</currentMemory>
+  <vcpu placement='static'>2</vcpu>
+  
+  <os>
+    <type arch='x86_64' machine='pc-q35-6.2'>hvm</type>
+    <boot dev='hd'/>
+  </os>
+  
+  <features>
+    <acpi/>
+    <apic/>
+    <pae/>
+  </features>
+  
+  <cpu mode='host-passthrough' check='none'>
+    <!-- Enable nested virtualization for containers -->
+    <feature policy='require' name='vmx'/>
+  </cpu>
+  
+  <clock offset='utc'>
+    <timer name='rtc' tickpolicy='catchup'/>
+    <timer name='pit' tickpolicy='delay'/>
+    <timer name='hpet' present='no'/>
+  </clock>
+  
+  <on_poweroff>destroy</on_poweroff>
+  <on_reboot>restart</on_reboot>
+  <on_crash>restart</on_crash>
+  
+  <devices>
+    <emulator>/usr/bin/qemu-system-x86_64</emulator>
+    
+    <!-- Main disk -->
+    <disk type='file' device='disk'>
+      <driver name='qemu' type='qcow2' cache='writeback' discard='unmap'/>
+      <source file='/var/lib/libvirt/images/placeholder.qcow2'/>
+      <target dev='vda' bus='virtio'/>
+      <address type='pci' domain='0x0000' bus='0x04' slot='0x00' function='0x0'/>
+    </disk>
+    
+    <!-- Network interface with better performance settings -->
+    <interface type='network'>
+      <source network='default'/>
+      <model type='virtio'/>
+      <driver name='vhost' queues='2'/>
+      <address type='pci' domain='0x0000' bus='0x01' slot='0x00' function='0x0'/>
+    </interface>
+    
+    <!-- VNC Graphics -->
+    <graphics type='vnc' port='-1' autoport='yes' listen='0.0.0.0'>
+      <listen type='address' address='0.0.0.0'/>
+    </graphics>
+    
+    <video>
+      <model type='qxl' ram='65536' vram='65536' vgamem='16384' heads='1' primary='yes'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x01' function='0x0'/>
+    </video>
+    
+    <console type='pty'>
+      <target type='serial' port='0'/>
+    </console>
+    
+    <input type='tablet' bus='usb'>
+      <address type='usb' bus='0' port='1'/>
+    </input>
+    <input type='mouse' bus='ps2'/>
+    <input type='keyboard' bus='ps2'/>
+    
+    <memballoon model='virtio'>
+      <address type='pci' domain='0x0000' bus='0x05' slot='0x00' function='0x0'/>
+    </memballoon>
+    
+    <rng model='virtio'>
+      <backend model='random'>/dev/urandom</backend>
+      <address type='pci' domain='0x0000' bus='0x06' slot='0x00' function='0x0'/>
+    </rng>
+  </devices>
+</domain>
