@@ -27,7 +27,7 @@
       "id": "home-assistant",
       "category": "Smart Home",
       "name": "Home Assistant 16.3",
-      "icon": "https://github.com/WillProvince/Starlight-Apps/blob/Starlight-aiohttp/home-assistant/home-assistant-logomark-with-margins-color-on-light.png?raw=true",
+      "icon": "si:homeassistant",
       "summary": "Latest Home Assistant VM",
       "description": "",
       "tags": ["home-assistant", "server", "home-automation"],
