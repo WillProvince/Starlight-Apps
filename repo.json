@@ -14,7 +14,7 @@
       "vcpus": 2,
       "memory_mb": 2048,
       "disk_size_gb": 20,
-      "xml_url": "https://raw.githubusercontent.com/WillProvince/Starlight-Apps/refs/heads/Starlight-aiohttp/ubuntu/22.04-server.xml",
+      "xml_url": "https://github.com/WillProvince/Starlight-Apps/raw/refs/heads/Starlight-aiohttp/ubuntu/22.04-server.xml",
       "image_source": {
         "type": "qcow2",
         "url": "https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64-disk-kvm.img",
@@ -34,7 +34,7 @@
       "vcpus": 2,
       "memory_mb": 2048,
       "disk_size_gb": 32,
-      "xml_url": "https://raw.githubusercontent.com/WillProvince/Starlight-Apps/refs/heads/Starlight-aiohttp/home-assistant/home-assistant-16.3-server.xml",
+      "xml_url": "https://github.com/WillProvince/Starlight-Apps/raw/refs/heads/Starlight-aiohttp/home-assistant/home-assistant-16.3-server.xml",
       "image_source": {
         "type": "qcow2",
         "url": "https://github.com/home-assistant/operating-system/releases/download/16.3/haos_ova-16.3.qcow2.xz",
@@ -54,7 +54,7 @@
       "vcpus": 2,
       "memory_mb": 2048,
       "disk_size_gb": 25,
-      "xml_url": "https://raw.githubusercontent.com/WillProvince/Starlight-Apps/refs/heads/Starlight-aiohttp/debian/debian-12-server.xml",
+      "xml_url": "https://github.com/WillProvince/Starlight-Apps/raw/refs/heads/Starlight-aiohttp/debian/debian-12-server.xml",
       "image_source": {
         "type": "qcow2",
         "url": "https://cdimage.debian.org/images/cloud/bookworm/daily/20251117-2299/debian-12-nocloud-amd64-daily-20251117-2299.qcow2",
@@ -74,7 +74,7 @@
       "vcpus": 2,
       "memory_mb": 2048,
       "disk_size_gb": 25,
-      "xml_url": "https://raw.githubusercontent.com/WillProvince/Starlight-Apps/refs/heads/Starlight-aiohttp/debian/debian-13-server.xml",
+      "xml_url": "https://github.com/WillProvince/Starlight-Apps/raw/refs/heads/Starlight-aiohttp/debian/debian-13-server.xml",
       "image_source": {
         "type": "qcow2",
         "url": "https://cdimage.debian.org/images/cloud/trixie/20251117-2299/debian-13-nocloud-amd64-20251117-2299.qcow2",
@@ -94,7 +94,7 @@
       "vcpus": 4,
       "memory_mb": 4096,
       "disk_size_gb": 30,
-      "xml_url": "https://raw.githubusercontent.com/WillProvince/Starlight-Apps/refs/heads/Starlight-aiohttp/rocky-linux/rocky-server.xml",
+      "xml_url": "https://github.com/WillProvince/Starlight-Apps/raw/refs/heads/Starlight-aiohttp/rocky-linux/rocky-server.xml",
       "image_source": {
         "type": "qcow2",
         "url": "https://dl.rockylinux.org/pub/rocky/9/images/x86_64/Rocky-9-GenericCloud.latest.x86_64.qcow2",
